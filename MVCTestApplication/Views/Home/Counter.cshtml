@@ -1,0 +1,15 @@
+﻿@model MVCTestApplication.Models.HomeModel
+@{
+    ViewData["Title"] = "Counter";
+}
+
+<div>
+    <p>AAAAAAAAAAAAA</p>
+    <p>@Model.CurrentCount</p>
+    <div>
+        @using (Html.BeginForm("IncrementCount", "Home", FormMethod.Post))
+        {
+            <input type="submit" value="Increment Count" class="btn btn-primary" />
+        }
+    </div>
+</div>
