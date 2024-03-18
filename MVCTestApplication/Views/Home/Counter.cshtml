@@ -4,8 +4,8 @@
 }
 
 <div>
-    <p>AAAAAAAAAAAAA</p>
-    <p>@Model.CurrentCount</p>
+    <h1>@ViewData["Title"]</h1>
+    <p>Current Count: @Model.CurrentCount</p>
     <div>
         @using (Html.BeginForm("IncrementCount", "Home", FormMethod.Post))
         {
